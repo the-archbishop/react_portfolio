@@ -1,0 +1,46 @@
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #F9CB40;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.dark-h2 {
+    color: #333;
+}
+
+.list-group-item {
+    border: 0;
+    line-height: 0em;
+    background: none;
+}
+
+.do-icons {
+    color: #efefef;
+}
+
+span {
+    background-color: #587B7F;
+    width: 112px;
+    height: 112px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 110px;
+}
+
+.do-div {
+    transition: transform .5s;
+}
+
+.do-div:hover {
+    transform: translate(0px, -20px);
+}

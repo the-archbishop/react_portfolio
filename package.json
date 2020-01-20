@@ -1,0 +1,31 @@
+{
+  "name": "react_portfolio",
+  "version": "1.0.0",
+  "description": "React based portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bflatbader/react_portfolio.git"
+  },
+  "author": "Bishop Bader",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bflatbader/react_portfolio/issues"
+  },
+  "homepage": "https://github.com/bflatbader/react_portfolio#readme",
+  "dependencies": {
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
