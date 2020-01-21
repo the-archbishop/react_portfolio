@@ -1,0 +1,33 @@
+.project {
+    padding: 10px;
+}
+
+.btn-blue {
+	margin-top: 5px;
+	background-color: #6E7271;
+	color: #eee;
+}
+
+.btn-blue:hover {
+	background-color: #17547c;
+	color: #eee;
+}
+
+.btn-dark {
+	margin-top: 5px;
+	background-color: #384D48;
+	color: #eee;
+}
+
+.btn-dark:hover {
+	background-color: #37373f;
+	color: #eee;
+}
+
+.port-text {
+    color: #ededed;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
