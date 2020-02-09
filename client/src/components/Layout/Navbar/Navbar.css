@@ -1,6 +1,5 @@
 nav {
     z-index: 9999;
-    color: #333333;
 }
 
 .navbar{ 
@@ -10,13 +9,9 @@ nav {
 .nav-link {
     font-size: 16px;
     text-transform: uppercase;
-    color: #eeeeee;
+    color: #fff;
     font-weight: 500;
 }
 .nav-link:hover {
     color: #faea92;
-}
-
-#logo { 
-    width: 50%;
 }

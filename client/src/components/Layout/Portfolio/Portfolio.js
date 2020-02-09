@@ -4,8 +4,6 @@ import PortfolioItem from './PortfolioItem';
 const projects = require('../../../files/projects.json');
 
 const Portfolio = () => {
-	console.log(projects);
-
 	return (
 		<ScrollableAnchor id={'portfolio'}>
 			<section class='section section-b'>

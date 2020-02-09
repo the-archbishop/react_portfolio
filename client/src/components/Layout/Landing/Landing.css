@@ -115,7 +115,7 @@ hr {
 }
 
 .socialIcons:hover {
-	color: rgb(80, 80, 80);
+	color: #d7a88f;
 }
 
 .section {
@@ -136,6 +136,9 @@ hr {
 .section-c {
 	background: #a6898d;
 	color: #fff;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .arrow {
