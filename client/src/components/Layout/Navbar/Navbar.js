@@ -7,7 +7,7 @@ const Navbar = () => {
 		<Fragment>
 			<nav class='navbar navbar-expand-lg sticky-top navbar-dark'>
 				<a class='navbar-brand' id='brand' href='/'>
-					<img id='logo' src={logo} alt='logo' />
+					
 				</a>
 				<button
 					class='navbar-toggler'
