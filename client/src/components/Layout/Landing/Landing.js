@@ -143,7 +143,7 @@ const Landing = () => {
 										<i className='fab fa-linkedin-in socialIcons'></i>
 									</a>
 									<a
-										href='https://github.com/bflatbader'
+										href='https://github.com/the-archbishop'
 										target='_blank'
 										rel='noopener noreferrer'
 									>

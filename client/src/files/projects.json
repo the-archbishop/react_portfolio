@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "name": "Case by Case v1",
+        "name": "Case by Case",
         "image": "images/cbc.jpg",
-        "readme": "https://github.com/the-archbishop/case-by-case/#readme",
-        "link": "https://case-by-case.herokuapp.com/"
+        "readme": "https://github.com/the-archbishop/CaseByCase#readme",
+        "link": "https://casebycase.herokuapp.com/"
     },
     {
         "id": 2,
