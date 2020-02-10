@@ -9,18 +9,18 @@
 }
 
 .btn-blue:hover {
-	background-color: #17547c;
+	background-color: rgb(139, 145, 143);
 	color: #eee;
 }
 
-.btn-dark {
+.btn-grn {
 	margin-top: 5px;
 	background-color: #384D48;
 	color: #eee;
 }
 
-.btn-dark:hover {
-	background-color: #37373f;
+.btn-grn:hover {
+	background-color: rgb(80, 112, 105);
 	color: #eee;
 }
 

@@ -19,7 +19,7 @@ const PortfolioItem = ({ projects }) => {
 						&nbsp;
 						<a
 							href={project.readme}
-							class='btn btn-dark'
+							class='btn btn-grn'
 							role='button'
 							target='_blank'
 						>
