@@ -11,7 +11,7 @@ const Landing = () => {
 	return (
 		<Fragment>
 			<ScrollableAnchor id={'home'}>
-				<header id='main' class='v-header container'>
+				<header id='main' className='v-header container'>
 					<Particles
 						className='fullscreen-video-wrap'
 						params={{
@@ -118,35 +118,48 @@ const Landing = () => {
 					/>
 					{/* <div className='header-overlay'></div> */}
 					<div className='header-content'>
-						<div class='row'>
-							<div class='col-md-6'>
-								<img class='rounded-circle img-fluid' src={me} />
-								<span class='image-background'></span>
+						<div className='row'>
+							<div className='col-md-6'>
+								<img
+									className='rounded-circle img-fluid'
+									src={me}
+									alt='Bishop Bader'
+								/>
+								<span className='image-background'></span>
 							</div>
-							<div class='col-md-6 spacer'>
+							<div className='col-md-6 spacer'>
 								<p id='greeting'>Hi, I'm</p>
 								<p className='name'>
 									Bishop <span className='yellow'>Bader</span>
 								</p>
 								<hr />
-								<p class='lead'>Full-Stack Developer</p>
+								<p className='lead'>Full-Stack Developer</p>
 								<p>
 									<a
 										href='https://www.linkedin.com/in/bishop-bader'
 										target='_blank'
+										rel='noopener noreferrer'
 									>
-										<i class='fab fa-linkedin-in socialIcons'></i>
+										<i className='fab fa-linkedin-in socialIcons'></i>
 									</a>
-									<a href='https://github.com/bflatbader' target='_blank'>
-										<i class='fab fa-github-alt socialIcons'></i>
+									<a
+										href='https://github.com/bflatbader'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<i className='fab fa-github-alt socialIcons'></i>
 									</a>
-									<a href='files/BBaderResume.pdf' target='_blank'>
-										<i class='fas fa-file-pdf socialIcons'></i>
+									<a
+										href='files/BBaderResume.pdf'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<i className='fas fa-file-pdf socialIcons'></i>
 									</a>
 								</p>
 								<br />
 								<a href='#about'>
-									<div class='arrow bounce' href></div>
+									<div className='arrow bounce' href></div>
 								</a>
 							</div>
 						</div>

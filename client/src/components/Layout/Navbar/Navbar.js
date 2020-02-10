@@ -5,15 +5,13 @@ import './Navbar.css';
 const Navbar = () => {
 	let location = useLocation();
 
-	console.log(location);
-
 	return (
 		<Fragment>
 			{location.hash !== '#about' ? (
-				<nav class='navbar navbar-expand-lg sticky-top navbar-dark'>
-					<a class='navbar-brand' id='brand' href='/'></a>
+				<nav className='navbar navbar-expand-lg sticky-top navbar-dark'>
+					<a className='navbar-brand' id='brand' href='/'></a>
 					<button
-						class='navbar-toggler'
+						className='navbar-toggler'
 						type='button'
 						data-toggle='collapse'
 						data-target='#navbarNavAltMarkup'
@@ -21,33 +19,33 @@ const Navbar = () => {
 						aria-expanded='false'
 						aria-label='Toggle navigation'
 					>
-						<span class='navbar-toggler-icon'></span>
+						<span className='navbar-toggler-icon'></span>
 					</button>
 					<div
-						class='collapse navbar-collapse justify-content-end'
+						className='collapse navbar-collapse justify-content-end'
 						id='navbarNavAltMarkup'
 					>
-						<div class='navbar-nav'>
-							<a class='nav-item nav-link' href='#home'>
+						<div className='navbar-nav'>
+							<a className='nav-item nav-link' href='#home'>
 								Home
 							</a>
-							<a class='nav-item nav-link' href='#about'>
+							<a className='nav-item nav-link' href='#about'>
 								About
 							</a>
-							<a class='nav-item nav-link' href='#portfolio'>
+							<a className='nav-item nav-link' href='#portfolio'>
 								Portfolio
 							</a>
-							<a class='nav-item nav-link' href='#contact'>
+							<a className='nav-item nav-link' href='#contact'>
 								Contact
 							</a>
 						</div>
 					</div>
 				</nav>
 			) : (
-				<nav class='navbar navbar-expand-lg sticky-top navbar-light'>
-					<a class='navbar-brand' id='brand' href='/'></a>
+				<nav className='navbar navbar-expand-lg sticky-top navbar-light'>
+					<a className='navbar-brand' id='brand' href='/'></a>
 					<button
-						class='navbar-toggler'
+						className='navbar-toggler'
 						type='button'
 						data-toggle='collapse'
 						data-target='#navbarNavAltMarkup'
@@ -55,23 +53,23 @@ const Navbar = () => {
 						aria-expanded='false'
 						aria-label='Toggle navigation'
 					>
-						<span class='navbar-toggler-icon'></span>
+						<span className='navbar-toggler-icon'></span>
 					</button>
 					<div
-						class='collapse navbar-collapse justify-content-end'
+						className='collapse navbar-collapse justify-content-end'
 						id='navbarNavAltMarkup'
 					>
-						<div class='navbar-nav'>
-							<a class='nav-item nav-link' href='#home'>
+						<div className='navbar-nav'>
+							<a className='nav-item nav-link' href='#home'>
 								Home
 							</a>
-							<a class='nav-item nav-link' href='#about'>
+							<a className='nav-item nav-link' href='#about'>
 								About
 							</a>
-							<a class='nav-item nav-link' href='#portfolio'>
+							<a className='nav-item nav-link' href='#portfolio'>
 								Portfolio
 							</a>
-							<a class='nav-item nav-link' href='#contact'>
+							<a className='nav-item nav-link' href='#contact'>
 								Contact
 							</a>
 						</div>

@@ -1,4 +1,4 @@
-import React, { Fargment, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import './Portfolio.css';
 
 const PortfolioItem = ({ projects }) => {
@@ -6,24 +6,26 @@ const PortfolioItem = ({ projects }) => {
 		<Fragment>
 				{projects.map(project => (
 					<div className='project' key={project.id}>
-						<img class='img-thumbnail' src={project.image} />
-						<p class='port-text'>{project.name}</p>
+						<img className='img-thumbnail' src={project.image} alt={project.name} />
+						<p className='port-text'>{project.name}</p>
 						<a
 							href={project.link}
-							class='btn btn-blue'
+							className='btn btn-blue'
 							role='button'
 							target='_blank'
+							rel="noopener noreferrer"
 						>
-							<i class='fas fa-link'></i>
+							<i className='fas fa-link'></i>
 						</a>
 						&nbsp;
 						<a
 							href={project.readme}
-							class='btn btn-grn'
+							className='btn btn-grn'
 							role='button'
 							target='_blank'
+							rel="noopener noreferrer"
 						>
-							<i class='fas fa-code'></i>
+							<i className='fas fa-code'></i>
 						</a>
 					</div>
 				))}

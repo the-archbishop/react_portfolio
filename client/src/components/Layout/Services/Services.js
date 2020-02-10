@@ -5,14 +5,14 @@ import './Services.css';
 const Services = () => {
 	return (
 		<ScrollableAnchor id={'about'}>
-			<section class='section section-a'>
+			<section className='section section-a'>
 				<div className='container'>
 					<h3>About</h3>
 					<h2 className='dark-h2'>What I Do</h2>
 					<div className='row'>
 						<div className='col-md-3 do-div'>
 							<span className='icon-background'>
-								<i class='fas fa-palette do-icons'></i>
+								<i className='fas fa-palette do-icons'></i>
 							</span>
 							<h4>Design</h4>
 							<ul className='list-group'>
@@ -23,7 +23,7 @@ const Services = () => {
 						</div>
 						<div className='col-md-3 do-div'>
 							<span className='icon-background'>
-								<i class='fas fa-file-code do-icons'></i>
+								<i className='fas fa-file-code do-icons'></i>
 							</span>
 							<h4>Front-End</h4>
 							<ul className='list-group'>
@@ -35,7 +35,7 @@ const Services = () => {
 						</div>
 						<div className='col-md-3 do-div'>
 							<span className='icon-background'>
-								<i class='fas fa-project-diagram do-icons'></i>
+								<i className='fas fa-project-diagram do-icons'></i>
 							</span>
 							<h4>Server</h4>
 							<ul className='list-group'>
@@ -46,7 +46,7 @@ const Services = () => {
 						</div>
 						<div className='col-md-3 do-div'>
 							<span className='icon-background'>
-								<i class='fas fa-database do-icons'></i>
+								<i className='fas fa-database do-icons'></i>
 							</span>
 							<h4>Database</h4>
 							<ul className='list-group'>

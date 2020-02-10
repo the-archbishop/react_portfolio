@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import emailjs from 'emailjs-com';
 import './Contact.css';
@@ -11,6 +11,7 @@ const Contact = () => {
 		message_html: ''
 	});
 
+	let showAlert;
 	const { from_name, reply_to, message_html } = formData;
 
 	const onChange = e => {
@@ -29,6 +30,8 @@ const Contact = () => {
 			)
 			.then(
 				result => {
+					alert("Thank you for the message! I'll reply as soon as I can.");
+					setFormData({ from_name: '', reply_to: '', message_html: '' });
 					console.log(result.text);
 				},
 				error => {
@@ -39,36 +42,55 @@ const Contact = () => {
 
 	return (
 		<ScrollableAnchor id={'contact'}>
-			<section class='section section-c'>
+			<section className='section section-c'>
 				<div className='container'>
+					{showAlert ? (
+						<div
+							className='alert alert-warning alert-dismissible fade show'
+							role='alert'
+						>
+							<strong>Success!</strong> Your message was sent. I will reply as
+							soon as I can.
+							<button
+								type='button'
+								className='close'
+								data-dismiss='alert'
+								aria-label='Close'
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+					) : (
+						<Fragment></Fragment>
+					)}
 					<h3>Contact</h3>
 					<h2>Drop a Line</h2>
-					<div class='row'>
-						<div class='col-md-1'></div>
-						<div class='col-md-4 text-left'>
+					<div className='row'>
+						<div className='col-md-1'></div>
+						<div className='col-md-4 text-left'>
 							<p>
-								<i class='fa fa-map-marker fa-lg'></i>&nbsp;&nbsp;Richmond, VA
+								<i className='fa fa-map-marker fa-lg'></i>&nbsp;&nbsp;Richmond, VA
 							</p>
 							<p>
-								<i class='fa fa-mobile fa-lg'></i>&nbsp;&nbsp;804.405.2789
+								<i className='fa fa-mobile fa-lg'></i>&nbsp;&nbsp;804.405.2789
 							</p>
 							<p>
-								<i class='fa fa-envelope-o '></i>&nbsp;&nbsp;
+								<i className='fa fa-envelope-o '></i>&nbsp;&nbsp;
 								<a href='mailto:bishop.bader@gmail.com'>
 									bishop.bader@gmail.com
 								</a>
 							</p>
 						</div>
-						<div class='col-md-7'>
+						<div className='col-md-7'>
 							<form id='message' className='contact-form' onSubmit={sendEmail}>
-								<div class='form-group row'>
-									<label for='name' class='col-md-3 col-form-label text-right'>
+								<div className='form-group row'>
+									<label htmlFor='name' className='col-md-3 col-form-label text-right'>
 										Name
 									</label>
-									<div class='col-md-9'>
+									<div className='col-md-9'>
 										<input
 											type='text'
-											class='form-control'
+											className='form-control'
 											name='from_name'
 											placeholder='John Smith'
 											value={from_name}
@@ -76,14 +98,14 @@ const Contact = () => {
 										/>
 									</div>
 								</div>
-								<div class='form-group row'>
-									<label for='email' class='col-md-3 col-form-label text-right'>
+								<div className='form-group row'>
+									<label htmlFor='email' className='col-md-3 col-form-label text-right'>
 										Email
 									</label>
-									<div class='col-md-9'>
+									<div className='col-md-9'>
 										<input
 											type='text'
-											class='form-control'
+											className='form-control'
 											name='reply_to'
 											placeholder='email@example.com'
 											value={reply_to}
@@ -91,16 +113,16 @@ const Contact = () => {
 										/>
 									</div>
 								</div>
-								<div class='form-group row'>
+								<div className='form-group row'>
 									<label
-										for='message'
-										class='col-md-3 col-form-label text-right'
+										htmlFor='message'
+										className='col-md-3 col-form-label text-right'
 									>
 										Message
 									</label>
-									<div class='col-md-9'>
+									<div className='col-md-9'>
 										<textarea
-											class='form-control'
+											className='form-control'
 											name='message_html'
 											rows='5'
 											placeholder="Hello! I'd like to hire you!"
@@ -109,7 +131,7 @@ const Contact = () => {
 										></textarea>
 									</div>
 								</div>
-								<button type='submit' class='btn btn-secondary float-right'>
+								<button type='submit' className='btn btn-secondary float-right'>
 									Send Message
 								</button>
 							</form>
