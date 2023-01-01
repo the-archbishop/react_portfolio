@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/bflatbader/react_portfolio#readme",
   "dependencies": {
-    "config": "^3.2.5",
+    "config": "^3.3.8",
     "express": "^4.17.1",
     "request": "^2.88.0"
   },
